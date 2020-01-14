@@ -90,7 +90,7 @@ gulp.task('js', function() {
 gulp.task('default', gulp.parallel('sass', 'browserSync', 'watch'));
 
 
-gulp.task('build', gulp.parallel('clean:dist', 'sass', 'useref', 'images', 'js', 'fonts', 'css', 'uploads'));
+gulp.task('build', gulp.parallel('sass', 'useref', 'images', 'js', 'fonts', 'css', 'uploads'));
 
 
 
