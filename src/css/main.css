@@ -74,58 +74,6 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic; }
 
-/* --------------------- 
-INPUT FIELDS
---------------------- */
-input[type=text],
-input[type=password],
-input[type=url],
-input[type=tel],
-input[type=number],
-input[type=color],
-input[type=email],
-input[type=search],
-textarea {
-  background: #fff;
-  font-family: 'ProximaNova-Regular', sans-serif;
-  font-size: 13px;
-  border: 1px solid #b3b3b3;
-  padding: 6px 9px;
-  color: #262626;
-  width: 100%;
-  height: 32px;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-
-textarea {
-  resize: vertical;
-  height: auto; }
-
-input[type=text]:hover,
-input[type=password]:hover,
-input[type=url]:hover,
-input[type=tel]:hover,
-input[type=number]:hover,
-input[type=color]:hover,
-input[type=email]:hover,
-input[type=search]:hover,
-textarea:hover {
-  border-color: #262626; }
-
-textarea::-webkit-input-placeholder {
-  color: #bcbcbc; }
-
-textarea:-ms-input-placeholder {
-  color: #bcbcbc; }
-
-textarea::placeholder {
-  color: #bcbcbc; }
-
-:focus {
-  outline: 0; }
-
 body {
   background: #fff;
   font-family: 'ProximaNova-Regular', sans-serif;
@@ -141,6 +89,12 @@ body {
     display: -ms-flexbox;
     display: flex;
     min-height: 44px; }
+    .headerTop__inner .lang {
+      margin: 0 0 0 117px; }
+    .headerTop__inner .chooseCity {
+      margin: 0 0 0 85px; }
+    .headerTop__inner .registation {
+      margin-left: auto; }
 
 .container {
   max-width: 1320px;
@@ -175,13 +129,14 @@ body {
     color: #777;
     font-size: 13px;
     text-decoration: none; }
+    .naviList__link:hover {
+      color: #fb2539; }
 
 .lang {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  margin: 0 0 0 117px; }
+  display: flex; }
   .lang__item {
     margin: 0 25px 0 0;
     display: -webkit-box;
@@ -213,3 +168,170 @@ body {
       left: 0;
       bottom: 0;
       background: transparent; }
+
+.chooseCity {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .chooseCity__title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #555;
+    font-size: 13px;
+    padding: 0 18px 0 0; }
+  .chooseCity__region {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #d8d9dc;
+    border-width: 0 1px;
+    padding: 0 10px;
+    min-width: 79px;
+    max-width: 119px; }
+  .chooseCity__location {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer; }
+  .chooseCity__arrow {
+    width: 11px;
+    height: 7px;
+    background: url(../img/mx.png) no-repeat;
+    display: inline-block;
+    margin: 0 0 0 9px;
+    position: relative;
+    top: 2px; }
+  .chooseCity__current {
+    max-width: 72px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+.registation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .registation__item {
+    margin-left: 38px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .registation__item:first-child {
+      margin-left: 0; }
+    .registation__item--active a {
+      color: #fb2539; }
+  .registation__link {
+    color: #777;
+    font-size: 13px;
+    text-decoration: none; }
+    .registation__link:hover {
+      color: #fb2539; }
+  .registation__lock {
+    width: 11px;
+    height: 14px;
+    background: url(../img/mx.png) no-repeat;
+    background-position: -30px 0;
+    display: inline-block;
+    margin: 0 6px 0 0;
+    top: 1px;
+    position: relative; }
+
+.headerMiddle__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 112px; }
+  .headerMiddle__inner .searchForm {
+    margin: 0 0 0 32px;
+    -webkit-flex-basis: 348px;
+        -ms-flex-preferred-size: 348px;
+            flex-basis: 348px; }
+
+.logo {
+  -webkit-flex-basis: 234px;
+      -ms-flex-preferred-size: 234px;
+          flex-basis: 234px;
+  background: #ffdc2c;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .logo img {
+    position: relative;
+    top: 7px;
+    left: -3px; }
+
+.searchForm {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .searchForm__form {
+    border: 1px solid #c2c2c2;
+    border-radius: 23px;
+    padding: 0 48px 0 24px;
+    position: relative;
+    height: 46px;
+    width: 100%; }
+  .searchForm__field {
+    width: 100%;
+    line-height: 44px;
+    border: 0;
+    font-size: 13px;
+    color: #999; }
+    .searchForm__field::-webkit-input-placeholder {
+      color: #999; }
+    .searchForm__field:-ms-input-placeholder {
+      color: #999; }
+    .searchForm__field::placeholder {
+      color: #999; }
+  .searchForm__search {
+    width: 19px;
+    height: 18px;
+    background: url(../img/mx.png) no-repeat;
+    background-position: -60px 0;
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    border: 0;
+    cursor: pointer; }
