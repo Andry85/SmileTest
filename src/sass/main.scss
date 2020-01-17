@@ -534,6 +534,14 @@ body {
 	&__title {
 		margin: 0 15px 0 0;
 	}
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 21px 0 0 0;
+	}
+	&__col-1 {
+		flex-basis: 45.89%;
+	}
 }
 .code {
 	font-size: 13px;
@@ -555,3 +563,47 @@ body {
 
 	}
 }
+
+.easyzoomWrap {
+	display: flex;
+	align-items: flex-start;
+	.easyzoomContainer {
+		flex-basis: 382px;
+	}
+}
+.easyzoomThums {
+	flex-basis: 139px;
+	margin: 0 24px 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	li {
+		flex-basis: 63px;
+		margin: 0 0 9px 0;
+		&.active {
+			a {
+				img {
+					border-color: #ffdc2c;
+				}
+			}
+		}
+		a {
+			display: block;
+			img {
+				border: 1px solid #e9eaeb;
+				width: 100%;
+
+			}
+		}
+	}
+}
+
+.videoBlock {
+	display: none;
+	iframe {
+		width: 100%;
+	}
+}
+
+
+

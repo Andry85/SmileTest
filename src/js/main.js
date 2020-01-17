@@ -39,12 +39,30 @@ $(function() {
 		var $easyzoom = $('.easyzoom').easyZoom();
 		var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
 
-		$('.thumbnails').on('click', 'a', function(e) {
+		$('.easyzoomThums').on('click', 'a', function(e) {
 			var $this = $(this);
+			$this.parent('li').addClass('active').siblings().removeClass('active');
 			e.preventDefault();
 			// Use EasyZoom's `swap` method
-			api1.swap($this.data('standard'), $this.attr('href'));
+
+			
+
+			if ($this.hasClass("easyzoomThums__videolink")) {
+				$('.easyzoom').hide();
+				$('.videoBlock').show();				
+			} else {
+				$('.easyzoom').show();
+				$('.videoBlock').hide();
+				
+				api1.swap($this.data('standard'), $this.attr('href'));
+			}
+		
 		});
+
+		$('.code').click(function() {
+			$('.movie').get(0).play(); 
+		});
+
 	/*********************************************************/
 						/* End Setup thumbnails  */
 	/********************************************************/ 
