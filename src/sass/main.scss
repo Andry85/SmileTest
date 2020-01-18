@@ -1063,13 +1063,13 @@ body {
 
 .main {
 	display: flex;
-	flex-wrap: wrap;
 	&__content {
 		flex-grow: 1;
 		margin: 0 43px 0 0;
 	}
 	&__sidebar {
 		flex-basis: 323px;
+		flex-shrink: 0;
 	}
 }
 
@@ -1106,20 +1106,6 @@ body {
 	span {
 		border-bottom: 1px solid #c1c1c1;
 	}
-	.hidden {
-		display: none;
-	}
-	&.opened {
-		&:before {
-			background-position: -30px -30px;
-		}
-		.hidden {
-			display: inline-block;
-		}
-		.showed {
-			display: none;
-		}
-	}
 	&:before {
 		content: '';
 		background: url(../img/mx.png) no-repeat;
@@ -1136,6 +1122,158 @@ body {
 .productDescription {
 	padding: 50px 0 0 0;
 	&__title {
-		margin: 0 0 10px 0;
+		margin: 0;
+	}
+	&__text {
+		margin: 0;
+		padding: 4px 0 16px 0;
+	}
+	&__entry {
+		margin: 0 0 -10px 0;
+	}
+}
+
+.reviewsBlock {
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		padding: 58px 0 30px 0;
+	}
+}
+.reviewsTabs {
+	display: flex;
+	&__item {
+		&:first-child {
+			margin-right: -1px;
+		}
+		&.active {
+			a {
+				border-color: #fb2539;
+				color: #333;
+				z-index: 2;
+			}
+		}
+	}
+	&__link {
+		font: {
+			family: 'ProximaNova-Bold', sans-serif;
+			size: 16px;
+		}
+		color: #777;
+		text-decoration: none;
+		border: 1px solid #e1e1e1;
+		display: block;
+		min-width: 168px;
+		max-width: 100%;
+		padding: 5px 10px 6px 10px;
+		text-align: center;
+		position: relative;
+		&:hover {
+			border-color: #fb2539;
+			color: #333;
+			z-index: 2;
+		}
+	}
+}
+
+.leaveFeedback {
+	background: #ffdc2c;
+	font: {
+		family: 'ProximaNova-Bold', sans-serif;
+		size: 15px;
+	}
+	text-decoration: none;
+	color: #333;
+	display: flex;
+	align-items: center;
+	flex-basis: 154px;
+	justify-content: center;
+	padding: 5px;
+}
+
+.reviewsContainer {
+	&__tab {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+}
+
+.reviewsList {
+	&__item {
+		border: 1px solid #ffdc2c;
+		padding: 0 24px 0 32px;
+	}
+	&__header {
+		padding: 23px 0 0 0;
+		display: flex;
+		align-items: center;
+	}
+	&__name {
+		margin: 0;
+	}
+	&__date {
+		color: #d3d3d3;
+		font-size: 13px;
+		margin: 0 0 0 25px;
+		position: relative;
+		top: 1px;
+	}
+	&__body {
+		padding: 7px 0 0 0;
+	}
+	&__text {
+		font-size: 13px;
+		line-height: 1.54;
+		margin: 0 0 11px 0;
+	}
+	&__virtues {
+		font-size: 13px;
+	}
+	&__virtuesTitle {
+		font: {
+			family: 'ProximaNova-Bold', sans-serif;
+		}
+		color: #57ae85;
+		margin: 0 10px 0 0;
+	}
+	&__disadvantages {
+		padding: 13px 0 0 0;
+		font-size: 13px;
+	}
+	&__disadvantagesTitle {
+		font: {
+			family: 'ProximaNova-Bold', sans-serif;
+		}
+		color: #f8727e;
+		margin: 0 10px 0 0;
+	}
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		padding: 11px 0 0 0;
+	}
+	&__actions {
+		display: flex;
+		align-items: flex-start;
+	}
+	&__actionsLink {
+		font-size: 13px;
+		color: #333;
+		text-decoration: none;
+		border-bottom: 1px solid #c1c1c1;
+		margin: 0 36px 0 0;
+	}
+}
+
+.voting {
+	display: flex;
+	&__title {
+		color: #777;
+		font-size: 13px;
+	}
+	&__item {
+
 	}
 }

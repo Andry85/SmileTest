@@ -29,45 +29,47 @@ $(function() {
 
 
 	/*********************************************************/
-						/* START FEATURES ACCORDION  */
+						/* START SHOW MORE ACTIONS  */
 	/********************************************************/
 		$( ".featuresTable tr:gt(6)" ).hide();
 		$('.features .showMore').click(function(e){
 			e.preventDefault();
-			if ($(this).hasClass('opened')) {
-				$(".featuresTable tr").each(function(){
-					$( ".featuresTable tr:gt(6)" ).hide();
-				});		
-			} else {
-				$(".featuresTable tr").each(function(){
-					$(this).show();
-				});	
-			}
-			$(this).toggleClass('opened');
+			$(".featuresTable tr").each(function(){
+				$(this).show();
+			});
 		});
+
+		$( ".productDescription__entry p:gt(1)" ).hide();
+		$('.productDescription .showMore').click(function(e){
+			e.preventDefault();
+			$(".productDescription__entry p").each(function(){
+				$(this).show();
+			});
+		});
+
 	/*********************************************************/
-						/* END FEATURES ACCORDION  */
+						/* END SHOW MORE ACTIONS  */
 	/********************************************************/
 
 
 
 	/*********************************************************/
-						/* START PRODUCTS TABS  */
+						/* START REVIEWS TABS  */
 	/********************************************************/
 
-		// function callTabs(tabsLabels, tabsContainer, parentContainer) {
-		// 	tabsLabels.addClass('active').siblings('li').removeClass('active');
-		// 	tabsLabels.parents(parentContainer).find(tabsContainer + '> div')
-		// 	.eq(tabsLabels.index()).addClass('active').siblings('div').removeClass('active');
-		// }
+		function callTabs(tabsLabels, tabsContainer, parentContainer) {
+			tabsLabels.addClass('active').siblings('li').removeClass('active');
+			tabsLabels.parents(parentContainer).find(tabsContainer + '> div')
+			.eq(tabsLabels.index()).addClass('active').siblings('div').removeClass('active');
+		}
 	
-		// $(".productFeaturesTabs__item").click(function(e){
-		// 	e.preventDefault();
-		// 	callTabs($(this),'.tabsContainer','.productFeatures');
-		// });
+		$(".reviewsTabs__item").click(function(e){
+			e.preventDefault();
+			callTabs($(this),'.reviewsContainer','.reviewsBlock');
+		});
 	
 	/*********************************************************/
-						/* END PRODUCTS TABS  */
+						/* END REVIEWS TABS  */
 	/********************************************************/
 
 
