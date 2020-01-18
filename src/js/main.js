@@ -37,6 +37,7 @@ $(function() {
 			$(".featuresTable tr").each(function(){
 				$(this).show();
 			});
+			$(this).hide();
 		});
 
 		$( ".productDescription__entry p:gt(1)" ).hide();
@@ -45,7 +46,29 @@ $(function() {
 			$(".productDescription__entry p").each(function(){
 				$(this).show();
 			});
+			$(this).hide();
 		});
+
+		$( ".reviewsList__body p:gt(1)" ).hide();
+		$('.reviewsList__body .showMore').click(function(e){
+			e.preventDefault();
+			$(this).parents('.reviewsList__body').find('p').each(function(){
+				$(this).show();
+			});
+			$(this).hide();
+		});
+
+		$( ".reviewsList > li:gt(2)" ).hide();
+		$('.reviewsContainer__tab.active > .showMore').click(function(e){
+			e.preventDefault();
+			$(this).parents('.reviewsContainer').find('.reviewsList > li').each(function(){
+				$(this).show();
+			});
+			$(this).hide();
+		});
+
+
+		
 
 	/*********************************************************/
 						/* END SHOW MORE ACTIONS  */

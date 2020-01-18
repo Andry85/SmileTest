@@ -1134,6 +1134,7 @@ body {
 }
 
 .reviewsBlock {
+	padding: 0 0 40px 0;
 	&__header {
 		display: flex;
 		justify-content: space-between;
@@ -1201,9 +1202,13 @@ body {
 }
 
 .reviewsList {
+	margin: 0 0 14px 0;
 	&__item {
 		border: 1px solid #ffdc2c;
-		padding: 0 24px 0 32px;
+		padding: 0 24px 30px 32px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: -1px;
 	}
 	&__header {
 		padding: 23px 0 0 0;
@@ -1222,11 +1227,18 @@ body {
 	}
 	&__body {
 		padding: 7px 0 0 0;
+		.showMore {
+			top: -9px;
+			& + div {
+				padding-top: 5px;
+			}
+		}
 	}
 	&__text {
 		font-size: 13px;
 		line-height: 1.54;
 		margin: 0 0 11px 0;
+
 	}
 	&__virtues {
 		font-size: 13px;
@@ -1265,6 +1277,18 @@ body {
 		border-bottom: 1px solid #c1c1c1;
 		margin: 0 36px 0 0;
 	}
+	&__col-1 {
+		flex-basis: 79.45%;
+	}
+	&__col-2 {
+		flex-basis: 150px;
+		flex-shrink: 0;
+		padding: 0 0 0 19px;
+		position: relative;
+		border-left: 1px solid #e9eaeb;
+		margin: 33px 0 0 10px;
+		
+	}
 }
 
 .voting {
@@ -1272,8 +1296,64 @@ body {
 	&__title {
 		color: #777;
 		font-size: 13px;
+		padding: 2px 0 0 0;
+		margin-right: -4px;
 	}
 	&__item {
+		
+	}
+	&__link {
+		font: {
+			family: 'ProximaNova-Bold', sans-serif;
+			size: 13px;
+		}
+		color: #57ae85;
+		text-decoration: none;
+		position: relative;
+		padding: 0 0 0 24px;
+		margin: 0 0 0 16px;
+		&--plus {
+			&:before {
+				content: '';
+				background: url(../img/mx.png) no-repeat;
+				background-position: -60px -30px;
+				width: 18px;
+				height: 16px;
+				position: absolute;
+				left: 0;
+				top: -2px;
+			}
+		}
+		&--minus {
+			color: #fb2539;
+			&:before {
+				content: '';
+				background: url(../img/mx.png) no-repeat;
+				background-position: -90px -30px;
+				width: 18px;
+				height: 16px;
+				position: absolute;
+				left: 0;
+				top: 2px;
+			}
+		}
+	}
 
+}
+
+.ratingResult {
+	&__title {
+		margin: -9px 0 0 6px;
+	}
+	&__entry {
+		padding: 4px 0 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__count {
+		font: {
+			family: 'ProximaNova-Bold', sans-serif;
+		}
 	}
 }
