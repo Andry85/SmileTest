@@ -906,7 +906,190 @@ body {
     text-decoration: none; }
 
 .relatedProduct {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-flex-basis: 43.27%;
       -ms-flex-preferred-size: 43.27%;
           flex-basis: 43.27%;
   border: 1px solid #e9eaeb; }
+  .relatedProduct__title {
+    margin: 0;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 22px;
+    color: #333;
+    text-align: center; }
+    .relatedProduct__title span {
+      background: #fff;
+      display: inline-block;
+      padding: 0 17px;
+      position: relative;
+      top: -17px; }
+  .relatedProduct__pic {
+    margin: 9px 0 0 0;
+    text-align: center; }
+  .relatedProduct__info {
+    margin: 30px 10px 0 51px;
+    max-width: 158px; }
+  .relatedProduct__desc {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.15;
+    margin: 4px 0 2px 0; }
+    .relatedProduct__desc a {
+      color: #333;
+      text-decoration: none; }
+  .relatedProduct__price {
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 20px; }
+    .relatedProduct__price span {
+      font-size: 16px;
+      margin: 0 0 0 8px; }
+  .relatedProduct__showAll {
+    text-align: center;
+    color: #fb2539;
+    display: block;
+    text-decoration: none;
+    margin-top: auto;
+    position: relative;
+    top: 9px; }
+    .relatedProduct__showAll span {
+      display: inline-block;
+      background: #fff;
+      padding: 0 13px;
+      border-bottom: 1px dotted;
+      line-height: 1.2; }
+
+.status {
+  color: #57ae85;
+  font-size: 13px;
+  position: relative;
+  padding: 0 0 0 19px; }
+  .status:before {
+    content: '';
+    background: url(../img/mx.png) no-repeat;
+    width: 13px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background-position: -510px 0; }
+  .status--finished {
+    color: #fb2539; }
+    .status--finished:before {
+      display: none; }
+
+.similarProducts {
+  padding: 62px 0 0 0; }
+  .similarProducts__title {
+    padding: 0 0 3px 0; }
+
+.catalogBox__pic {
+  position: relative; }
+
+.catalogBox__discount {
+  position: absolute;
+  background: #ff8941;
+  top: 10px;
+  left: 0;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  padding: 3px 13px;
+  border-radius: 4px; }
+
+.catalogBox__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1px 0 0 0; }
+
+.catalogBox__title {
+  margin: 10px 0 0 0;
+  line-height: 1.2;
+  font-family: 'ProximaNova-Regular', sans-serif;
+  font-size: 15px;
+  font-weight: normal; }
+  .catalogBox__title a {
+    text-decoration: none;
+    color: #333; }
+
+.catalogBox__price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+
+.catalogBox__currentPrice {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 30px; }
+  .catalogBox__currentPrice span {
+    font-size: 16px;
+    margin: 0 0 0 7px; }
+
+.catalogBox__oldPrice {
+  margin: 0 0 0 15px;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  color: #ff8941;
+  text-decoration: line-through; }
+
+.codeProduct {
+  color: #999;
+  font-size: 12px;
+  padding: 2px 0 0 0; }
+
+.catalogSlider {
+  position: relative; }
+
+.owl-nav [class*='owl-'] {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  text-indent: -9000px;
+  overflow: hidden;
+  top: -57px; }
+  .owl-nav [class*='owl-']:after {
+    content: "";
+    background: url(../img/mx.png) no-repeat;
+    background-position: -540px 0;
+    width: 11px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2; }
+  .owl-nav [class*='owl-']:hover {
+    opacity: 0.8; }
+
+.owl-nav [class*='owl-prev'] {
+  background: #474a4e;
+  right: 45px; }
+  .owl-nav [class*='owl-prev']:after {
+    background-position: -570px 0; }
+
+.owl-nav [class*='owl-next'] {
+  background: #3c3f43;
+  right: 0; }
+
+.owl-nav .disabled {
+  cursor: default; }

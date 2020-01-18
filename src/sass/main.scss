@@ -780,6 +780,216 @@ body {
 }
 
 .relatedProduct {
+	display: flex;
+	flex-direction: column;
 	flex-basis: 43.27%;
 	border: 1px solid #e9eaeb;
+	&__title {
+		margin: 0;
+		font: {
+			family: 'ProximaNova-Bold', sans-serif;
+			size: 22px;
+		}
+		color: #333;
+		text-align: center;
+		span {
+			background: #fff;
+			display: inline-block;
+			padding: 0 17px;
+			position: relative;
+			top: -17px;
+		}
+	}
+	&__pic {
+		margin: 9px 0 0 0;
+		text-align: center;
+	}
+	&__info {
+		margin: 30px 10px 0 51px;
+		max-width: 158px;
+	}
+	&__desc {
+		font: {
+			family: 'ProximaNova-Regular', sans-serif;
+			size: 13px;
+		}
+		font-weight: normal;
+		line-height: 1.15;
+		margin: 4px 0 2px 0;
+		a {
+			color: #333;
+			text-decoration: none;
+
+		}
+	}
+	&__price {
+		font: {
+			family: 'ProximaNova-Bold', sans-serif;
+			size: 20px;
+		}
+		span {
+			font-size: 16px;
+			margin: 0 0 0 8px;	
+		}
+	}
+	&__showAll {
+		text-align: center;
+		color: #fb2539;
+		display: block;
+		text-decoration: none;
+		margin-top: auto;
+		position: relative;
+		top: 9px;
+		span {
+			display: inline-block;
+			background: #fff;
+			padding: 0 13px;
+			border-bottom: 1px dotted;
+			line-height: 1.2;
+		}
+	}
+}
+
+.status {
+	color: #57ae85;
+	font-size: 13px;
+	position: relative;
+	padding: 0 0 0 19px;
+	&:before {
+		content: '';
+		background: url(../img/mx.png) no-repeat;
+		width: 13px;
+		height: 8px;
+		position: absolute;
+		left: 0;
+		top: 8px;
+		background-position: -510px 0;
+	}
+	&--finished {
+		color: #fb2539;
+		&:before {
+			display: none;
+		}
+	}
+
+}
+
+.similarProducts {
+	padding: 62px 0 0 0;
+	&__title {
+		padding: 0 0 3px 0;
+	}
+}
+
+.catalogBox {
+	&__pic {
+		position: relative;
+	}
+	&__discount {
+		position: absolute;
+		background: #ff8941;
+		top: 10px;
+		left: 0;
+		font: {
+			family: 'ProximaNova-Bold', sans-serif;
+			size: 14px;
+		}
+		text-align: center;
+		color: #fff;
+		padding: 3px 13px;
+		border-radius: 4px;
+
+
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		padding: 1px 0 0 0;
+	}
+	&__title {
+		margin: 10px 0 0 0;
+		line-height: 1.2;
+		font: {
+			family: 'ProximaNova-Regular', sans-serif;
+			size: 15px;
+			weight: normal;
+		}
+		a {
+			text-decoration: none;
+			color: #333;
+		}
+	}
+	&__price {
+		display: flex;
+		align-items: baseline;
+	}
+	&__currentPrice {
+		font: {
+			family: 'ProximaNova-Bold', sans-serif;
+			size: 30px;
+		}
+		span {
+			font-size: 16px;
+			margin: 0 0 0 7px;
+		}
+	}
+	&__oldPrice {
+		margin: 0 0 0 15px;
+		font: {
+			family: 'ProximaNova-Bold', sans-serif;
+		}
+		color: #ff8941;
+		text-decoration: line-through;
+	}
+}
+.codeProduct {
+	color: #999;
+	font-size: 12px;
+	padding: 2px 0 0 0;
+}
+
+.catalogSlider {
+	position: relative;
+}
+
+.owl-nav {
+	[class*='owl-'] {
+	  width: 45px;
+	  height: 45px;
+	  position: absolute;
+	  text-indent: -9000px;
+	  overflow: hidden;
+	  top: -57px;
+	  &:after {
+		  content: "";
+		  background: url(../img/mx.png) no-repeat;
+		  background-position: -540px 0;
+		  width: 11px;
+		  height: 15px;
+		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  transform: translate(-50%,-50%);
+		  z-index: 2;	  
+	  }
+	  &:hover {
+			opacity: 0.8;
+	  }
+	}
+	[class*='owl-prev'] {
+		background: #474a4e;
+		right: 45px;
+		&:after {
+			background-position: -570px 0;
+		}
+	}
+	[class*='owl-next'] {
+		background: #3c3f43;
+		right: 0;
+	}
+  
+	.disabled {
+	  cursor: default;
+	}
+  
 }

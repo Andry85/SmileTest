@@ -3,14 +3,14 @@ $(function() {
 	/*********************************************************/
 						/* START MAIN SLIDER  */
 	/********************************************************/
-			$('#slider').owlCarousel({
-                center: false,
-                items: 1.5,
-                loop: true,
-                margin: 0,
-                nav:true,
-                dots: false,
-              });
+		$('.catalogSlider').owlCarousel({
+			center: false,
+			items: 5,
+			loop: true,
+			margin: 30,
+			nav:true,
+			dots: false,
+		});
 	/*********************************************************/
 						/* END MAIN SLIDER  */
 	/********************************************************/
