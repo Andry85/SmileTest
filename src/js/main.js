@@ -58,18 +58,21 @@ $(function() {
 			$(this).hide();
 		});
 
-		$( ".reviewsList > li:gt(2)" ).hide();
-		$('.reviewsContainer__tab.active > .showMore').click(function(e){
+		
+
+
+		$( ".reviewsContainer__tab" ).each(function(){
+			$(this).find('.reviewsList > li:gt(2)').hide();
+		});
+
+
+		$('.reviewsContainer__tab > .showMore').click(function(e){
 			e.preventDefault();
-			$(this).parents('.reviewsContainer').find('.reviewsList > li').each(function(){
+			$(this).parent('.reviewsContainer__tab').find('.reviewsList > li').each(function(){
 				$(this).show();
 			});
 			$(this).hide();
 		});
-
-
-		
-
 	/*********************************************************/
 						/* END SHOW MORE ACTIONS  */
 	/********************************************************/
