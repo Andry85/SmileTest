@@ -993,3 +993,149 @@ body {
 	}
   
 }
+
+.productFeatures {
+
+}
+
+.productFeaturesTabs {
+	padding: 34px 0 0 0;
+	margin: 0 0 10px 0;
+	display: flex;
+	border-bottom: 2px solid #e9eaeb;
+	&__item {
+		margin-left: 83px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:nth-child(2) {
+			margin-left: 68px;
+		}
+		&:nth-child(3) {
+			margin-left: 75px;
+		}
+		&:nth-child(4) {
+			margin-left: 83px;
+		}
+		&:nth-child(5) {
+			margin-left: 85px;
+		}
+		&.active {
+			a {
+				color: #fb2539;
+				&:before {
+					content: '';
+					width: 100%;
+					height: 2px;
+					position: absolute;
+					bottom: -2px;
+					left: 0;
+					background: #fb2539;
+				}	
+			}
+		}
+
+	}
+	&__link {
+		font: {
+			family: 'ProximaNova-Bold', sans-serif;
+			size: 16px;
+		}
+		color: #777;
+		text-decoration: none;
+		padding: 24px 0 24px 0;
+		display: block;
+		position: relative;
+		&:hover {
+			color: #fb2539;
+			&:before {
+				content: '';
+				width: 100%;
+				height: 2px;
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				background: #fb2539;
+			}
+		}
+	}
+}
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	&__content {
+		flex-grow: 1;
+		margin: 0 43px 0 0;
+	}
+	&__sidebar {
+		flex-basis: 323px;
+	}
+}
+
+.features {
+	padding: 21px 0 0 0;
+	&__title {
+		margin: 0 0 10px 0;
+	}
+}
+.featuresTable {
+	margin: 0 0 18px 0;
+	tr {
+		&:nth-child(odd) {
+			td {
+				background: #eff0f3;
+			}
+		}
+		td {
+			font-size: 13px;
+			padding: 12px 24px 11px 24px;
+		}
+	}
+	&__colWidth {
+		width: 53.9%;
+	}
+}
+
+.showMore {
+	position: relative;
+	padding: 0 0 0 18px;
+	text-decoration: none;
+	color: #333;
+	font-size: 13px;
+	span {
+		border-bottom: 1px solid #c1c1c1;
+	}
+	.hidden {
+		display: none;
+	}
+	&.opened {
+		&:before {
+			background-position: -30px -30px;
+		}
+		.hidden {
+			display: inline-block;
+		}
+		.showed {
+			display: none;
+		}
+	}
+	&:before {
+		content: '';
+		background: url(../img/mx.png) no-repeat;
+		background-position: 0 -30px;
+		width: 11px;
+		height: 8px;
+		position: absolute;
+		left: 0;
+		top: 6px;
+	}
+
+}
+
+.productDescription {
+	padding: 50px 0 0 0;
+	&__title {
+		margin: 0 0 10px 0;
+	}
+}

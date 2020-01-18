@@ -16,6 +16,61 @@ $(function() {
 	/********************************************************/
 
 
+
+	/*********************************************************/
+						/* START PRODUCTS DESCRIPTION  */
+	/********************************************************/
+	$(".productFeaturesTabs__link").click(function(e){
+		$(this).parent('li').addClass('active').siblings('li').removeClass('active');
+	});
+	/*********************************************************/
+						/* END PRODUCTS TABS  */
+	/********************************************************/
+
+
+	/*********************************************************/
+						/* START FEATURES ACCORDION  */
+	/********************************************************/
+		$( ".featuresTable tr:gt(6)" ).hide();
+		$('.features .showMore').click(function(e){
+			e.preventDefault();
+			if ($(this).hasClass('opened')) {
+				$(".featuresTable tr").each(function(){
+					$( ".featuresTable tr:gt(6)" ).hide();
+				});		
+			} else {
+				$(".featuresTable tr").each(function(){
+					$(this).show();
+				});	
+			}
+			$(this).toggleClass('opened');
+		});
+	/*********************************************************/
+						/* END FEATURES ACCORDION  */
+	/********************************************************/
+
+
+
+	/*********************************************************/
+						/* START PRODUCTS TABS  */
+	/********************************************************/
+
+		// function callTabs(tabsLabels, tabsContainer, parentContainer) {
+		// 	tabsLabels.addClass('active').siblings('li').removeClass('active');
+		// 	tabsLabels.parents(parentContainer).find(tabsContainer + '> div')
+		// 	.eq(tabsLabels.index()).addClass('active').siblings('div').removeClass('active');
+		// }
+	
+		// $(".productFeaturesTabs__item").click(function(e){
+		// 	e.preventDefault();
+		// 	callTabs($(this),'.tabsContainer','.productFeatures');
+		// });
+	
+	/*********************************************************/
+						/* END PRODUCTS TABS  */
+	/********************************************************/
+
+
 	
 
 	/*********************************************************/
