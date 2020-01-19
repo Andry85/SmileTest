@@ -8,7 +8,7 @@ body {
 	background: #fff;
 	font: {
 	    family: 'ProximaNova-Regular', sans-serif;
-	    size: 14px;
+	    size: 13px;
 	}
 	color: #333;
 	line-height: 1.643;
@@ -71,7 +71,6 @@ body {
 	}
 	&__link {
 		color: #777;
-		font-size: 13px;
 		text-decoration: none;
 		&:hover {
 			color: #fb2539;
@@ -95,7 +94,6 @@ body {
 	}
 	&__link {
 		color: #777;
-		font-size: 13px;
 		text-decoration: none;
 		position: relative;
 		display: flex;
@@ -119,7 +117,6 @@ body {
 		display: flex;
 		align-items: center;
 		color: #555;
-		font-size: 13px;
 		padding: 0 18px 0 0;
 	}
 	&__region {
@@ -172,7 +169,6 @@ body {
 	}
 	&__link {
 		color: #777;
-		font-size: 13px;
 		text-decoration: none;
 		&:hover {
 			color: #fb2539;
@@ -246,7 +242,6 @@ body {
 		width: 100%;
 		line-height: 44px;
 		border: 0;
-		font-size: 13px;
 		color: #999;
 		&::placeholder {
 			color: #999;
@@ -290,7 +285,6 @@ body {
 
 .callBtn {
 	border: 2px solid #ffdc2c;
-	font-size: 13px;
 	color: #333;
 	text-decoration: none;
 	padding: 4px 15px 5px 15px;
@@ -478,7 +472,6 @@ body {
 	&__link {
 		display: flex;
 		flex-basis: 100%;
-		font-size: 13px;
 		color: #fff;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -520,7 +513,6 @@ body {
 	}
 	&__link {
 		color: #999;
-		font-size: 13px;
 		text-decoration: none;
 	}
 }
@@ -548,7 +540,6 @@ body {
 	}
 }
 .code {
-	font-size: 13px;
 	position: relative;
 	background: #ffdc2c;
 	padding: 6px 11px 5px 17px;
@@ -754,7 +745,6 @@ body {
 	}
 	&__link {
 		color: #333;
-		font-size: 13px;
 		text-decoration: none;
 	}
 }
@@ -774,7 +764,6 @@ body {
 	}
 	&__link {
 		color: #333;
-		font-size: 13px;
 		text-decoration: none;
 	}
 }
@@ -811,7 +800,6 @@ body {
 	&__desc {
 		font: {
 			family: 'ProximaNova-Regular', sans-serif;
-			size: 13px;
 		}
 		font-weight: normal;
 		line-height: 1.15;
@@ -852,7 +840,6 @@ body {
 
 .status {
 	color: #57ae85;
-	font-size: 13px;
 	position: relative;
 	padding: 0 0 0 19px;
 	&:before {
@@ -1070,6 +1057,10 @@ body {
 	&__sidebar {
 		flex-basis: 323px;
 		flex-shrink: 0;
+		padding: 64px 0 0 0;
+		.specialPropose {
+			margin: 0 0 30px 0;
+		}
 	}
 }
 
@@ -1088,7 +1079,6 @@ body {
 			}
 		}
 		td {
-			font-size: 13px;
 			padding: 12px 24px 11px 24px;
 		}
 	}
@@ -1102,7 +1092,6 @@ body {
 	padding: 0 0 0 18px;
 	text-decoration: none;
 	color: #333;
-	font-size: 13px;
 	span {
 		border-bottom: 1px solid #c1c1c1;
 	}
@@ -1220,7 +1209,6 @@ body {
 	}
 	&__date {
 		color: #d3d3d3;
-		font-size: 13px;
 		margin: 0 0 0 25px;
 		position: relative;
 		top: 1px;
@@ -1235,13 +1223,11 @@ body {
 		}
 	}
 	&__text {
-		font-size: 13px;
 		line-height: 1.54;
 		margin: 0 0 11px 0;
 
 	}
 	&__virtues {
-		font-size: 13px;
 	}
 	&__virtuesTitle {
 		font: {
@@ -1252,7 +1238,6 @@ body {
 	}
 	&__disadvantages {
 		padding: 13px 0 0 0;
-		font-size: 13px;
 	}
 	&__disadvantagesTitle {
 		font: {
@@ -1271,7 +1256,6 @@ body {
 		align-items: flex-start;
 	}
 	&__actionsLink {
-		font-size: 13px;
 		color: #333;
 		text-decoration: none;
 		border-bottom: 1px solid #c1c1c1;
@@ -1295,7 +1279,6 @@ body {
 	display: flex;
 	&__title {
 		color: #777;
-		font-size: 13px;
 		padding: 2px 0 0 0;
 		margin-right: -4px;
 	}
@@ -1305,7 +1288,6 @@ body {
 	&__link {
 		font: {
 			family: 'ProximaNova-Bold', sans-serif;
-			size: 13px;
 		}
 		color: #57ae85;
 		text-decoration: none;
@@ -1356,4 +1338,126 @@ body {
 			family: 'ProximaNova-Bold', sans-serif;
 		}
 	}
+}
+
+.specialPropose {
+	border: 1px solid #e9eaeb;
+	padding: 19px 10px 28px 10px;
+	&__pic {
+		text-align: center;
+	}
+	&__inner {
+		max-width: 220px;
+		margin: 0 0 0 36px;
+		padding: 8px 0 0 0;
+	}
+	&__desc {
+		margin: 11px 0 1px 0;
+		line-height: 1.2;
+		font: {
+			family: 'ProximaNova-Regular', sans-serif;
+			size: 15px;
+		}
+		a {
+			color: #999;
+			text-decoration: none;	
+		}	
+	}
+	&__price {
+		font-family: 'ProximaNova-Bold', sans-serif;
+		font-size: 30px;
+		color: #999;
+		span {
+			font-size: 16px;
+			margin: 0 0 0 7px;
+		}
+	}
+	&__footer {
+		display: flex;
+		padding: 5px 0 14px 0;
+		align-items: center;
+	}
+	&__btn {
+		flex-basis: 158px;
+		max-width: 100%;
+		text-align: center;
+		border: 2px solid#fb2539;
+		text-decoration: none;
+		display: block;
+		color:#333;
+		padding: 6px 10px 5px 10px;
+		font-family: 'ProximaNova-Bold', sans-serif;
+		font-size: 14px;
+		line-height: 0.86;
+	}
+	.compareBtn {
+		margin: 0 0 0 24px;
+	}
+	&__similar {
+		color: #333;
+		text-decoration: none;
+		border-bottom: 1px dotted;
+	}
+}
+.compareBtn {
+	background: url(../img/mx.png) no-repeat;
+	width: 28px;
+	height: 18px;
+	background-position: -480px 0;
+	position: relative;
+}
+
+.selectingCar {
+	background: #ddefe7;
+	padding: 23px 30px 27px 30px;
+	&__title {
+		font-size: 14px;
+		padding: 0 0 0 22px;
+		position: relative;
+		&:before {
+			content: '';
+			background: url(../img/mx.png) no-repeat;
+			background-position: -120px -30px;
+			width: 15px;
+			height: 11px;
+			position: absolute;
+			left: 0;
+			top: 5px;
+		}	
+	}
+}
+
+.videoReviews {
+	&__title {
+		margin: 10px 0;
+		span {
+			margin: 0 0 0 9px;
+		}
+	}
+}
+.videoReviewsList {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 0 20px 0;
+	&__item {
+		flex-basis: 48.38%;
+	}
+}
+
+.articles {
+	padding: 20px 0;
+	&__title {
+		margin: 10px 0;
+		span {
+			margin: 0 0 0 9px;
+		}
+	}
+}
+
+.articlesSlider {
+	width: 681px;
+}
+.articlesBox {
+	display: flex;
 }

@@ -512,16 +512,16 @@
                 <div class="productFeatures">
                     <ul class="productFeaturesTabs">
                         <li class="productFeaturesTabs__item active">
-                            <a class="productFeaturesTabs__link" href="#">Характеристики</a>
+                            <a class="productFeaturesTabs__link" href="#features">Характеристики</a>
                         </li>
                         <li class="productFeaturesTabs__item">
-                            <a class="productFeaturesTabs__link" href="#">Описание</a>
+                            <a class="productFeaturesTabs__link" href="#productDescription">Описание</a>
                         </li>
                         <li class="productFeaturesTabs__item">
-                            <a class="productFeaturesTabs__link" href="#">Отзывы и вопросы<span>(40)</span></a>
+                            <a class="productFeaturesTabs__link" href="#reviewsBlock">Отзывы и вопросы<span>(40)</span></a>
                         </li>
                         <li class="productFeaturesTabs__item">
-                            <a class="productFeaturesTabs__link" href="#">Видеообзоры и статьи</a>
+                            <a class="productFeaturesTabs__link" href="#videoReviews">Видеообзоры и статьи</a>
                         </li>
                         <li class="productFeaturesTabs__item">
                             <a class="productFeaturesTabs__link" href="#">Сертификаты</a>
@@ -529,7 +529,7 @@
                     </ul>
                     <div class="main">
                         <div class="main__content">
-                            <section class="features">
+                            <section id="features" class="features">
                                 <h3 class="features__title">Характеристики товара</h3>
                                 <table class="featuresTable">
                                     <colgroup>
@@ -599,7 +599,7 @@
                                     <span>Показать все характеристики</span>
                                 </a>
                             </section>
-                            <section class="productDescription">
+                            <section id="productDescription" class="productDescription">
                                 <h3 class="productDescription__title">Описание товара</h3>
                                 <div class="productDescription__entry">
                                     <p class="productDescription__text">Mobil Super 3000 X1 5W-40 представляет собой синтетическое моторное масло, обеспечивающее длительный срок службы двигателей в автомобилях различных типов и годов выпуска, а также повышенный уровень их защиты в широком диапазоне температур.</p>
@@ -610,7 +610,7 @@
                                     <span>Подробнее</span>
                                 </a>
                             </section>
-                            <div class="reviewsBlock">
+                            <div id="reviewsBlock" class="reviewsBlock">
                                 <div class="reviewsBlock__header">
                                     <ul class="reviewsTabs">
                                         <li class="reviewsTabs__item active">
@@ -1001,9 +1001,71 @@
                                     </div>
                                 </div>
                             </div>
+                            <section id="videoReviews" class="videoReviews">
+                                <h3 class="videoReviews__title">Видеообзоры<span>(2)</span></h3>
+                                <ul class="videoReviewsList">
+                                    <li class="videoReviewsList__item">
+                                        <img class="responsive-img" src="img/video_1.jpg" alt="">
+                                    </li>
+                                    <li class="videoReviewsList__item">
+                                        <img class="responsive-img" src="img/video_2.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="articles">
+                                <h3 class="articles__title">Статьи<span>(2)</span></h3>
+                                <div class="articlesSlider">
+                                    <div class="item">
+                                        <article class="articlesBox">
+                                            <figure class="articlesBox__pic">
+                                                <a href="#">
+                                                    <img src="img/articles_slider/001.jpg" alt="">
+                                                </a>
+                                            </figure>
+                                            <div class="articlesBox__inner">
+                                                <time class="articlesBox__date">16 августа 2016</time>
+                                                <h2 class="articlesBox__title">
+                                                    <a href="#">Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</a>
+                                                </h2>
+                                                <p class="articlesBox__text">Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ... года назад, он был одним из самых желаемых ... ююююююавто-гаджетов. А теперь достаточно скачать на смартфон бесплатную</p>
+                                            </div>
+                                        </article>
+                                        
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="main__sidebar">
-                            uhi
+                            <div class="specialPropose">
+                                <figure class="specialPropose__pic">
+                                    <a href="#">
+                                        <img src="img/specialPropose.png" alt="">
+                                    </a>
+                                </figure>    
+                                <div class="specialPropose__inner">
+                                    <span class="specialPropose__status">Нет в наличии</span>
+                                    <h3 class="specialPropose__desc">
+                                        <a href="#">Моторное масло Liqui Moly TOP TEC 4100 5W-40 4</a>
+                                    </h3>
+                                    <div class="specialPropose__price">326<span>грн</span></div>
+                                    <div class="specialPropose__footer">
+                                        <a class="specialPropose__btn" href="#">Сообщить о поступлении</a>
+                                        <a class="compareBtn" href="#"></a>
+                                    </div>
+                                    <a class="specialPropose__similar" href="#">Показать все похожие товары</a>
+                                </div>
+                            </div>
+                            <div class="selectingCar">
+                                <h4 class="selectingCar__title">Товар подходит к вашему авто:</h4>
+                                <div class="chosen-wrap">
+                                    <select class="classic-select" style="width: 100%">
+                                        <option selected="selected" value="0">Volkswagen Golf, 1.9</option>
+                                        <option value="1">Volkswagen Golf, 1.8</option>
+                                        <option value="2">Volkswagen Golf, 1.7</option>
+                                        <option value="3">Volkswagen Golf, 1.6</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
