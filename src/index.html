@@ -98,7 +98,7 @@
                             <img src="./img/logo.png" alt="База авто звука">
                         </a>
                         <div class="searchForm">
-                            <form class="searchForm__form" method="#" action="#">
+                            <form class="searchForm__form" method="post" action="form.php">
                                 <input class="searchForm__field" type="text" placeholder="Поиск по названию, коду, категории товара">
                                 <button class="searchForm__search"></button>
                             </form>
@@ -229,7 +229,7 @@
                                     </li>
                                     <li>
                                         <a class="easyzoomThums__videolink" href="#">
-                                            <img class="responsive-img" class="responsive-img" src="img/mainSlider/003/small.jpg" alt="" />
+                                            <img class="responsive-img" src="img/mainSlider/003/small.jpg" alt="" />
                                         </a>                                
                                     </li>
                                     <li>
@@ -655,7 +655,7 @@
                                                                 <dd class="voting__item">
                                                                     <a class="voting__link voting__link--minus" href="#">3</a>
                                                                 </dd>
-                                                            </dl сд>
+                                                            </dl>
                                                         </div>
                                                     </div>
                                                     <div class="reviewsList__col-2">
@@ -747,7 +747,7 @@
                                                                 <dd class="voting__item">
                                                                     <a class="voting__link voting__link--minus" href="#">3</a>
                                                                 </dd>
-                                                            </dl сд>
+                                                            </dl>
                                                         </div>
                                                     </div>
                                                     <div class="reviewsList__col-2">
@@ -842,7 +842,7 @@
                                                                 <dd class="voting__item">
                                                                     <a class="voting__link voting__link--minus" href="#">3</a>
                                                                 </dd>
-                                                            </dl сд>
+                                                            </dl>
                                                         </div>
                                                     </div>
                                                     <div class="reviewsList__col-2">
@@ -890,7 +890,7 @@
                                                                 <dd class="voting__item">
                                                                     <a class="voting__link voting__link--minus" href="#">3</a>
                                                                 </dd>
-                                                            </dl сд>
+                                                            </dl>
                                                         </div>
                                                     </div>
                                                     <div class="reviewsList__col-2">
@@ -934,7 +934,7 @@
                                                                 <dd class="voting__item">
                                                                     <a class="voting__link voting__link--minus" href="#">3</a>
                                                                 </dd>
-                                                            </dl сд>
+                                                            </dl>
                                                         </div>
                                                     </div>
                                                     <div class="reviewsList__col-2">
@@ -978,7 +978,7 @@
                                                                 <dd class="voting__item">
                                                                     <a class="voting__link voting__link--minus" href="#">3</a>
                                                                 </dd>
-                                                            </dl сд>
+                                                            </dl>
                                                         </div>
                                                     </div>
                                                     <div class="reviewsList__col-2">
@@ -1014,12 +1014,12 @@
                             </section>
                             <section class="articles">
                                 <h3 class="articles__title">Статьи<span>(2)</span></h3>
-                                <div class="articlesSlider">
+                                <div class="articlesSlider owl-carousel">
                                     <div class="item">
                                         <article class="articlesBox">
                                             <figure class="articlesBox__pic">
                                                 <a href="#">
-                                                    <img src="img/articles_slider/001.jpg" alt="">
+                                                    <img class="responsive-img" src="img/articles_slider/001.jpg" alt="">
                                                 </a>
                                             </figure>
                                             <div class="articlesBox__inner">
@@ -1027,10 +1027,41 @@
                                                 <h2 class="articlesBox__title">
                                                     <a href="#">Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</a>
                                                 </h2>
-                                                <p class="articlesBox__text">Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ... года назад, он был одним из самых желаемых ... ююююююавто-гаджетов. А теперь достаточно скачать на смартфон бесплатную</p>
+                                                <p class="articlesBox__text">Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ...</p>
                                             </div>
                                         </article>
-                                        
+                                    </div>
+                                    <div class="item">
+                                        <article class="articlesBox">
+                                            <figure class="articlesBox__pic">
+                                                <a href="#">
+                                                    <img class="responsive-img" src="img/articles_slider/002.jpg" alt="">
+                                                </a>
+                                            </figure>
+                                            <div class="articlesBox__inner">
+                                                <time class="articlesBox__date">16 августа 2016</time>
+                                                <h2 class="articlesBox__title">
+                                                    <a href="#">Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</a>
+                                                </h2>
+                                                <p class="articlesBox__text">Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ...</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="item">
+                                        <article class="articlesBox">
+                                            <figure class="articlesBox__pic">
+                                                <a href="#">
+                                                    <img class="responsive-img" src="img/articles_slider/002.jpg" alt="">
+                                                </a>
+                                            </figure>
+                                            <div class="articlesBox__inner">
+                                                <time class="articlesBox__date">16 августа 2016</time>
+                                                <h2 class="articlesBox__title">
+                                                    <a href="#">Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</a>
+                                                </h2>
+                                                <p class="articlesBox__text">Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ...</p>
+                                            </div>
+                                        </article>
                                     </div>
                                 </div>
                             </section>

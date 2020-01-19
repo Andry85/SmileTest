@@ -1131,27 +1131,23 @@ body {
         left: 0;
         background: #fb2539; }
 
-.main {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .main__content {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    margin: 0 43px 0 0; }
-  .main__sidebar {
-    -webkit-flex-basis: 323px;
-        -ms-flex-preferred-size: 323px;
-            flex-basis: 323px;
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
-    padding: 64px 0 0 0; }
-    .main__sidebar .specialPropose {
-      margin: 0 0 30px 0; }
+.main:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.main__content {
+  width: 100%;
+  float: left;
+  padding-right: 366px; }
+
+.main__sidebar {
+  width: 323px;
+  margin-left: -323px;
+  float: left;
+  padding: 64px 0 0 0; }
+  .main__sidebar .specialPropose {
+    margin: 0 0 30px 0; }
 
 .features {
   padding: 21px 0 0 0; }
@@ -1520,11 +1516,51 @@ body {
     .articles__title span {
       margin: 0 0 0 9px; }
 
-.articlesSlider {
-  width: 681px; }
+.articlesSlider .owl-nav [class*='owl-'] {
+  top: 0; }
+
+.articlesSlider .owl-nav [class*='owl-'] {
+  height: 50%; }
+
+.articlesSlider .owl-nav [class*='owl-prev'] {
+  right: 0;
+  top: 50%; }
 
 .articlesBox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  .articlesBox__pic {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .articlesBox__pic a img {
+      width: 100%; }
+  .articlesBox__inner {
+    -webkit-flex-basis: 54.92%;
+        -ms-flex-preferred-size: 54.92%;
+            flex-basis: 54.92%;
+    border: 1px solid #e9eaeb;
+    padding: 22px 29px 15px 29px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .articlesBox__date {
+    color: #999;
+    font-size: 12px;
+    padding: 0 0 4px 0;
+    display: block; }
+  .articlesBox__title {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.2; }
+    .articlesBox__title a {
+      text-decoration: none;
+      color: #333; }
+  .articlesBox__text {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.42; }

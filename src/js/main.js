@@ -15,6 +15,21 @@ $(function() {
 						/* END MAIN SLIDER  */
 	/********************************************************/
 
+	/*********************************************************/
+						/* START ARTICLES SLIDER  */
+	/********************************************************/
+		$('.articlesSlider').owlCarousel({
+			center: false,
+			items: 1.338,
+			loop: true,
+			margin: 31,
+			nav:true,
+			dots: false,
+		});
+	/*********************************************************/
+						/* END ARTICLES SLIDER  */
+	/********************************************************/
+
 
 
 	/*********************************************************/
@@ -59,12 +74,9 @@ $(function() {
 		});
 
 		
-
-
 		$( ".reviewsContainer__tab" ).each(function(){
 			$(this).find('.reviewsList > li:gt(2)').hide();
 		});
-
 
 		$('.reviewsContainer__tab > .showMore').click(function(e){
 			e.preventDefault();
@@ -150,6 +162,11 @@ $(function() {
 						/* End Setup thumbnails  */
 	/********************************************************/ 
 
+	
+
+
+
+	
 
 
 
