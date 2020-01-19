@@ -1,9 +1,9 @@
 $(function() {
 
 	/*********************************************************/
-						/* START MAIN SLIDER  */
+						/* START SLIDERS  */
 	/********************************************************/
-		$('.catalogSlider').owlCarousel({
+		$('.catalogSlider,.popularProductsSlider,.chooseBuyersSlider').owlCarousel({
 			center: false,
 			items: 5,
 			loop: true,
@@ -11,13 +11,18 @@ $(function() {
 			nav:true,
 			dots: false,
 		});
-	/*********************************************************/
-						/* END MAIN SLIDER  */
-	/********************************************************/
 
-	/*********************************************************/
-						/* START ARTICLES SLIDER  */
-	/********************************************************/
+		$('.watchedProductsSlider').owlCarousel({
+			center: false,
+			items: 5,
+			autoWidth:true,
+			loop: true,
+			margin: 0,
+			nav:true,
+			dots: false,
+		});
+
+
 		$('.articlesSlider').owlCarousel({
 			center: false,
 			items: 1.338,
@@ -27,9 +32,8 @@ $(function() {
 			dots: false,
 		});
 	/*********************************************************/
-						/* END ARTICLES SLIDER  */
+						/* END MAIN SLIDERS  */
 	/********************************************************/
-
 
 
 	/*********************************************************/
@@ -92,7 +96,7 @@ $(function() {
 
 
 	/*********************************************************/
-						/* START REVIEWS TABS  */
+						/* START TABS  */
 	/********************************************************/
 
 		function callTabs(tabsLabels, tabsContainer, parentContainer) {
@@ -105,9 +109,14 @@ $(function() {
 			e.preventDefault();
 			callTabs($(this),'.reviewsContainer','.reviewsBlock');
 		});
+
+		$(".popularProductsList__item").click(function(e){
+			e.preventDefault();
+			callTabs($(this),'.popularTabsContainer','.popularProducts');
+		});
 	
 	/*********************************************************/
-						/* END REVIEWS TABS  */
+						/* END TABS  */
 	/********************************************************/
 
 
@@ -119,6 +128,10 @@ $(function() {
     	$(".classic-select").select2({
 		   theme: "classic",
 		   minimumResultsForSearch: Infinity
+		});
+		$(".chosen-wrap--original .classic-select").select2({
+			theme: "original",
+			minimumResultsForSearch: Infinity
 		});
 
 
@@ -161,6 +174,36 @@ $(function() {
 	/*********************************************************/
 						/* End Setup thumbnails  */
 	/********************************************************/ 
+
+	/*********************************************************/
+						/* START SCROLLING  */
+	/********************************************************/
+
+		// Add smooth scrolling to all links
+		$(".productFeaturesTabs__link").on('click', function(event) {
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+		
+			// Store hash
+			var hash = this.hash;
+		
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function(){
+		
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			});
+			} // End if
+		});
+
+	/*********************************************************/
+						/* END SCROLLING  */
+	/********************************************************/	
 
 	
 
