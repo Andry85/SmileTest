@@ -1,7 +1,6 @@
 @import "variables";
 @import "reset";
 
-
 body {
 	background: #fff;
 	font: {
@@ -13,10 +12,9 @@ body {
 	min-width: 1320px;
 }
 
-.content {
-	padding: 0 0 80px 0;
-}
 
+
+/* HEADER START */
 .headerTop {
 	background: #eff0f3;
 	&__inner {
@@ -541,7 +539,13 @@ body {
 		position: relative;
 	}
 }
+/* HEADER END */
 
+
+/* CONTENT START */
+.content {
+	padding: 0 0 80px 0;
+}
 .breadcrumb {
 	display: flex;
 	flex-wrap: wrap;
@@ -1876,7 +1880,10 @@ body {
 		}
 	}
 }
+/* CONTENT END */
 
+
+/* FOOTER START */
 .footer {
 	color: #d4d5d6;
 	display: flex;
@@ -2042,3 +2049,4 @@ body {
 		}
 	}
 }
+/* FOOTER END */

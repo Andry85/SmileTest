@@ -85,9 +85,7 @@ body {
   line-height: 1.643;
   min-width: 1320px; }
 
-.content {
-  padding: 0 0 80px 0; }
-
+/* HEADER START */
 .headerTop {
   background: #eff0f3; }
   .headerTop__inner {
@@ -658,6 +656,11 @@ body {
   .mainMenu__icon {
     background: url(../img/mx.png) no-repeat;
     position: relative; }
+
+/* HEADER END */
+/* CONTENT START */
+.content {
+  padding: 0 0 80px 0; }
 
 .breadcrumb {
   display: -webkit-box;
@@ -1974,6 +1977,8 @@ body {
   border-left-width: 3px;
   min-width: 236px; }
 
+/* CONTENT END */
+/* FOOTER START */
 .footer {
   color: #d4d5d6;
   display: -webkit-box;
@@ -2139,3 +2144,5 @@ body {
       background-position: -480px -30px; }
     .socialList__link--instagram {
       background-position: -540px -30px; }
+
+/* FOOTER END */
