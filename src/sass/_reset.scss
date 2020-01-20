@@ -8,7 +8,10 @@ input {
 img, table {border: none;}
 
 
-a {text-decoration: underline;}
+a {
+	text-decoration: underline;
+	transition: all 0.5s ease;
+}
 a:hover {text-decoration: none;}
 a:focus {outline: none;}
 				

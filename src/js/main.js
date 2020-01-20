@@ -153,14 +153,16 @@ $(function() {
 			e.preventDefault();
 			// Use EasyZoom's `swap` method
 
-			
+	
 
 			if ($this.hasClass("easyzoomThums__videolink")) {
 				$('.easyzoom').hide();
-				$('.videoBlock').show();				
+				$('.videoBlock').show();
+				player[2].playVideo();				
 			} else {
 				$('.easyzoom').show();
 				$('.videoBlock').hide();
+				player[2].stopVideo();
 				
 				api1.swap($this.data('standard'), $this.attr('href'));
 			}
@@ -204,6 +206,25 @@ $(function() {
 	/*********************************************************/
 						/* END SCROLLING  */
 	/********************************************************/	
+
+	/*********************************************************/
+						/* START VIDEO  */
+	/********************************************************/
+		$(".videoReviewsList__item--video0 > img").click(function(e){
+			$(this).hide();
+			player[0].playVideo();
+
+		});
+		$(".videoReviewsList__item--video1 > img").click(function(e){
+			$(this).hide();
+			player[1].playVideo();
+
+		});
+
+		
+	/*********************************************************/
+						/* END VIDEO  */
+	/********************************************************/
 
 	
 

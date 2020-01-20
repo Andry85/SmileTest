@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>index</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <meta name="keywords" content="">
@@ -14,6 +13,8 @@
 <link rel="stylesheet" href="css/owl.carousel.css">
 <link rel="stylesheet" href="css/select2.css">
 <link rel="stylesheet" href="css/easyzoom.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
 <!--endbuild-->
 </head>
 <body>   
@@ -98,7 +99,7 @@
                             <img src="./img/logo.png" alt="База авто звука">
                         </a>
                         <div class="searchForm">
-                            <form class="searchForm__form" method="post" action="form.php">
+                            <form class="searchForm__form" method="post" action="№">
                                 <input class="searchForm__field" type="text" placeholder="Поиск по названию, коду, категории товара">
                                 <button class="searchForm__search"></button>
                             </form>
@@ -250,7 +251,7 @@
                                         </a>  
                                     </div>
                                     <div class="videoBlock">
-                                        <iframe width="382" height="382" src="https://www.youtube.com/embed/nsIm1Gt7fuo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <div id="videoBlockVideo"></div>
                                     </div> 
                                 </div> 
                             </div>
@@ -630,7 +631,7 @@
                                                     <div class="reviewsList__col-1">
                                                         <div class="reviewsList__header">
                                                             <h4 class="reviewsList__name">Владимир</h4>
-                                                            <time class="reviewsList__date">04.07.2016</time>
+                                                            <div class="reviewsList__date">04.07.2016</div>
                                                         </div>
                                                         <div class="reviewsList__body">
                                                             <p class="reviewsList__text">У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше</p>
@@ -674,7 +675,7 @@
                                                     <div class="reviewsList__col-1">
                                                         <div class="reviewsList__header">
                                                             <h4 class="reviewsList__name">Панас</h4>
-                                                            <time class="reviewsList__date">04.07.2016</time>
+                                                            <div class="reviewsList__date">04.07.2016</div>
                                                         </div>
                                                         <div class="reviewsList__body">
                                                             <p class="reviewsList__text">У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше</p>
@@ -703,7 +704,7 @@
                                                                 <dd class="voting__item">
                                                                     <a class="voting__link voting__link--minus" href="#">3</a>
                                                                 </dd>
-                                                            </dl сд>
+                                                            </dl>
                                                         </div>
                                                     </div>
                                                     <div class="reviewsList__col-2">
@@ -722,7 +723,7 @@
                                                     <div class="reviewsList__col-1">
                                                         <div class="reviewsList__header">
                                                             <h4 class="reviewsList__name">Анастасия</h4>
-                                                            <time class="reviewsList__date">04.07.2016</time>
+                                                            <div class="reviewsList__date">04.07.2016</div>
                                                         </div>
                                                         <div class="reviewsList__body">
                                                             <p class="reviewsList__text">У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше</p>
@@ -766,7 +767,7 @@
                                                     <div class="reviewsList__col-1">
                                                         <div class="reviewsList__header">
                                                             <h4 class="reviewsList__name">Оксана</h4>
-                                                            <time class="reviewsList__date">04.07.2016</time>
+                                                            <div class="reviewsList__date">04.07.2016</div>
                                                         </div>
                                                         <div class="reviewsList__body">
                                                             <p class="reviewsList__text">У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше</p>
@@ -791,7 +792,7 @@
                                                                 <dd class="voting__item">
                                                                     <a class="voting__link voting__link--minus" href="#">3</a>
                                                                 </dd>
-                                                            </dl сд>
+                                                            </dl>
                                                         </div>
                                                     </div>
                                                     <div class="reviewsList__col-2">
@@ -817,7 +818,7 @@
                                                     <div class="reviewsList__col-1">
                                                         <div class="reviewsList__header">
                                                             <h4 class="reviewsList__name">Владимир</h4>
-                                                            <time class="reviewsList__date">04.07.2016</time>
+                                                            <div class="reviewsList__date">04.07.2016</div>
                                                         </div>
                                                         <div class="reviewsList__body">
                                                             <p class="reviewsList__text">У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше</p>
@@ -861,7 +862,7 @@
                                                     <div class="reviewsList__col-1">
                                                         <div class="reviewsList__header">
                                                             <h4 class="reviewsList__name">Панас</h4>
-                                                            <time class="reviewsList__date">04.07.2016</time>
+                                                            <div class="reviewsList__date">04.07.2016</div>
                                                         </div>
                                                         <div class="reviewsList__body">
                                                             <p class="reviewsList__text">У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше</p>
@@ -909,7 +910,7 @@
                                                     <div class="reviewsList__col-1">
                                                         <div class="reviewsList__header">
                                                             <h4 class="reviewsList__name">Анастасия</h4>
-                                                            <time class="reviewsList__date">04.07.2016</time>
+                                                            <div class="reviewsList__date">04.07.2016</div>
                                                         </div>
                                                         <div class="reviewsList__body">
                                                             <p class="reviewsList__text">У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше</p>
@@ -953,7 +954,7 @@
                                                     <div class="reviewsList__col-1">
                                                         <div class="reviewsList__header">
                                                             <h4 class="reviewsList__name">Оксана</h4>
-                                                            <time class="reviewsList__date">04.07.2016</time>
+                                                            <div class="reviewsList__date">04.07.2016</div>
                                                         </div>
                                                         <div class="reviewsList__body">
                                                             <p class="reviewsList__text">У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше</p>
@@ -1004,11 +1005,13 @@
                             <section id="videoReviews" class="videoReviews">
                                 <h3 class="videoReviews__title">Видеообзоры<span>(2)</span></h3>
                                 <ul class="videoReviewsList">
-                                    <li class="videoReviewsList__item">
+                                    <li class="videoReviewsList__item videoReviewsList__item--video0">
                                         <img class="responsive-img" src="img/video_1.jpg" alt="">
+                                        <div id="video0"></div>
                                     </li>
-                                    <li class="videoReviewsList__item">
+                                    <li class="videoReviewsList__item videoReviewsList__item--video1">
                                         <img class="responsive-img" src="img/video_2.jpg" alt="">
+                                        <div id="video1"></div>
                                     </li>
                                 </ul>
                             </section>
@@ -1023,7 +1026,7 @@
                                                 </a>
                                             </figure>
                                             <div class="articlesBox__inner">
-                                                <time class="articlesBox__date">16 августа 2016</time>
+                                                <div class="articlesBox__date">16 августа 2016</div>
                                                 <h2 class="articlesBox__title">
                                                     <a href="#">Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</a>
                                                 </h2>
@@ -1039,7 +1042,7 @@
                                                 </a>
                                             </figure>
                                             <div class="articlesBox__inner">
-                                                <time class="articlesBox__date">16 августа 2016</time>
+                                                <div class="articlesBox__date">16 августа 2016</div>
                                                 <h2 class="articlesBox__title">
                                                     <a href="#">Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</a>
                                                 </h2>
@@ -1055,7 +1058,7 @@
                                                 </a>
                                             </figure>
                                             <div class="articlesBox__inner">
-                                                <time class="articlesBox__date">16 августа 2016</time>
+                                                <div class="articlesBox__date">16 августа 2016</div>
                                                 <h2 class="articlesBox__title">
                                                     <a href="#">Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</a>
                                                 </h2>
@@ -1069,22 +1072,22 @@
                                 <h3 class="certificates__title">Сертификаты соответствия</h3>
                                 <ul class="certificatesList">
                                     <li class="certificatesList__item">
-                                        <a class="certificatesList__link" href="#">
+                                        <a class="certificatesList__link" href="img/certificates/001.jpg" data-fancybox="image">
                                             <img src="img/certificates/001.jpg" alt="">
                                         </a>
                                     </li>
                                     <li class="certificatesList__item">
-                                        <a class="certificatesList__link" href="#">
+                                        <a class="certificatesList__link" href="img/certificates/002.jpg" data-fancybox="image">
                                             <img src="img/certificates/002.jpg" alt="">
                                         </a>
                                     </li>
                                     <li class="certificatesList__item">
-                                        <a class="certificatesList__link" href="#">
+                                        <a class="certificatesList__link" href="img/certificates/003.jpg" data-fancybox="image">
                                             <img src="img/certificates/003.jpg" alt="">
                                         </a>
                                     </li>
                                     <li class="certificatesList__item">
-                                        <a class="certificatesList__link" href="#">
+                                        <a class="certificatesList__link" href="img/certificates/004.jpg" data-fancybox="image">
                                             <img src="img/certificates/004.jpg" alt="">
                                         </a>
                                     </li>
@@ -3119,7 +3122,9 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="js/easyzoom.js"></script>
 	<script src="js/select2.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
