@@ -27,7 +27,7 @@ body {
 			margin: 0 0 0 117px;
 		}
 		.chooseCity {
-			margin: 0 0 0 85px;
+			margin: 0 0 0 59px;
 		}
 		.registation {
 			margin-left: auto;
@@ -158,7 +158,7 @@ body {
 .registation {
 	display: flex;
 	&__item {
-		margin-left: 38px;
+		margin-left: 36px;
 		display: flex;
 		align-items: center;
 		&:first-child {
@@ -239,6 +239,7 @@ body {
 		border-radius: 23px;
 		padding: 0 48px 0 24px;
 		position: relative;
+		top: 2px;
 		height: 46px;
 		width: 100%;
 	}
@@ -334,7 +335,7 @@ body {
 			}	
 		}
 		&--chosen {
-			margin-left: 28px;
+			margin-left: 23px;
 			span {
 				width: 24px;
 				height: 21px;
@@ -478,6 +479,10 @@ body {
 				background-position: -240px 0;
 				margin-right: 9px;
 				top: -1px;
+				left: -4px;
+			}
+			span {
+				left: -3px;
 			}
 		}
 		&--tests {
@@ -496,6 +501,10 @@ body {
 				background-position: -300px 0;
 				margin-right: 11px;
 				top: -1px;
+				left: 2px;
+			}
+			span {
+				left: 1px;
 			}
 		}
 		&--news {
@@ -504,6 +513,10 @@ body {
 				height: 15px;
 				background-position: -330px 0;
 				margin-right: 11px;
+				left: 2px;
+			}
+			span {
+				left: 1px;
 			}
 		}
 	}
@@ -518,6 +531,10 @@ body {
 		&:hover {
 			color: #ffdc2c;
 		}
+		span {
+			position: relative;
+			letter-spacing: 1px;
+		}
 	}
 	&__icon {
 		background: url(../img/mx.png) no-repeat;
@@ -528,7 +545,7 @@ body {
 .breadcrumb {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 13px 0 8px 0;
+	padding: 15px 0 8px 0;
 	&__item {
 		padding: 0 15px 0 18px;
 		position: relative;
@@ -602,6 +619,9 @@ body {
 	align-items: flex-start;
 	.easyzoomContainer {
 		flex-basis: 382px;
+		position: relative;
+		top: 9px;
+		left: -7px;
 	}
 }
 .easyzoomThums {
@@ -649,11 +669,13 @@ body {
 		margin: 6px 0 0 21px;
 	}
 	.review {
-		margin: 1px 0 0 25px;
+		margin: 1px 0 0 22px;
 	}
 	.question {
 		margin: 1px 0 0 33px;
 	}
+	position: relative;
+	top: 2px;
 }
 
 .rating {
@@ -717,11 +739,12 @@ body {
 	}
 	.relatedProduct {
 		width: 43.27%;
+		margin-top: 4px;
 	}
 }
 .pice {
 	background: #f7f7f9;
-	padding: 12px 31px 24px 29px;
+	padding: 15px 31px 24px 29px;
 	&__sum {
 		color: #999;
 		font: {
@@ -734,7 +757,7 @@ body {
 		}
 	}
 	&__btn {
-		margin: 10px 0 0 0;
+		margin: 12px 0 0 0;
 		width: 100%;
 		text-align: center;
 		border: 2px solid #fb2539;
@@ -773,7 +796,7 @@ body {
 	}
 	&__footer {
 		display: flex;
-		padding: 22px 0 0 0;
+		padding: 30px 0 0 0;
 	}
 	.compare {
 		margin-left: 34px;
@@ -781,7 +804,7 @@ body {
 }
 
 .specifications {
-	padding: 27px 0 15px 0;
+	padding: 30px 0 15px 0;
 	color: #777;
 	font-size: 12px;
 	line-height: 1.166;
@@ -837,6 +860,8 @@ body {
 	border: 1px solid #e9eaeb;
 	&__title {
 		margin: 0;
+		position: relative;
+		left: -4px;
 		font: {
 			family: 'ProximaNova-Bold', sans-serif;
 			size: 22px;
@@ -854,9 +879,13 @@ body {
 	&__pic {
 		margin: 9px 0 0 0;
 		text-align: center;
+		img {
+			position: relative;
+			left: -4px;
+		}
 	}
 	&__info {
-		margin: 30px 10px 0 51px;
+		margin: 31px 10px 0 51px;
 		max-width: 158px;
 	}
 	&__desc {
@@ -866,7 +895,7 @@ body {
 		}
 		font-weight: normal;
 		line-height: 1.15;
-		margin: 4px 0 2px 0;
+		margin: 4px 0 7px 0;
 		a {
 			color: #333;
 			text-decoration: none;
@@ -890,7 +919,8 @@ body {
 		text-decoration: none;
 		margin-top: auto;
 		position: relative;
-		top: 9px;
+		top: 7px;
+		left: 3px;
 		span {
 			display: inline-block;
 			background: #fff;
@@ -925,7 +955,7 @@ body {
 }
 
 .similarProducts {
-	padding: 62px 0 0 0;
+	padding: 56px 0 0 0;
 	&__title {
 		padding: 0 0 3px 0;
 	}
@@ -958,7 +988,7 @@ body {
 	&__info {
 		display: flex;
 		justify-content: space-between;
-		padding: 1px 0 0 0;
+		padding: 8px 0 0 0;
 	}
 	&__title {
 		margin: 10px 0 0 0;
@@ -978,6 +1008,7 @@ body {
 		align-items: baseline;
 	}
 	&__currentPrice {
+		padding: 2px 0 0 0;
 		font: {
 			family: 'ProximaNova-Bold', sans-serif;
 			size: 30px;
@@ -1010,7 +1041,7 @@ body {
 		}
 		padding: 0 20px;
 		line-height: 39px;
-		flex-basis: 129px;
+		flex-basis: 121px;
 		text-align: center;
 		margin: 0 18px 0 0;
 		position: relative;
@@ -1100,7 +1131,7 @@ body {
 }
 
 .productFeaturesTabs {
-	padding: 34px 0 0 0;
+	padding: 36px 0 0 0;
 	margin: 0 0 10px 0;
 	display: flex;
 	border-bottom: 2px solid #e9eaeb;
@@ -1147,7 +1178,7 @@ body {
 		}
 		color: #777;
 		text-decoration: none;
-		padding: 24px 0 24px 0;
+		padding: 24px 0 17px 0;
 		display: block;
 		position: relative;
 		&:hover {
@@ -1236,13 +1267,13 @@ body {
 }
 
 .productDescription {
-	padding: 50px 0 0 0;
+	padding: 52px 0 0 0;
 	&__title {
-		margin: 0;
+		margin: 0 0 5px 0;
 	}
 	&__text {
 		margin: 0;
-		padding: 4px 0 16px 0;
+		padding: 4px 0 18px 0;
 	}
 	&__entry {
 		margin: 0 0 -10px 0;
@@ -1319,7 +1350,7 @@ body {
 	margin: 0 0 14px 0;
 	&__item {
 		border: 1px solid #ffdc2c;
-		padding: 0 24px 30px 32px;
+		padding: 0 24px 26px 32px;
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: -1px;
@@ -1349,10 +1380,8 @@ body {
 	}
 	&__text {
 		line-height: 1.54;
-		margin: 0 0 11px 0;
+		margin: 0 0 13px 0;
 
-	}
-	&__virtues {
 	}
 	&__virtuesTitle {
 		font: {
@@ -1387,21 +1416,22 @@ body {
 		margin: 0 36px 0 0;
 	}
 	&__col-1 {
-		flex-basis: 79.45%;
+		flex-basis: 79.8%;
 	}
 	&__col-2 {
 		flex-basis: 150px;
 		flex-shrink: 0;
-		padding: 0 0 0 19px;
+		padding: 0 0 0 17px;
 		position: relative;
 		border-left: 1px solid #e9eaeb;
-		margin: 33px 0 0 10px;
+		margin: 34px 0 0 10px;
 		
 	}
 }
 
 .voting {
 	display: flex;
+	margin: 2px 5px 0 0;
 	&__title {
 		color: #777;
 		padding: 2px 0 0 0;
@@ -1551,9 +1581,9 @@ body {
 
 .videoReviews {
 	&__title {
-		margin: 10px 0;
+		margin: 13px 0 11px 0;
 		span {
-			margin: 0 0 0 9px;
+			margin: 0 0 0 5px;
 		}
 	}
 }
@@ -1568,7 +1598,7 @@ body {
 		iframe {
 			width: 100%;
 			height: 100%;
-			min-height: 263px;
+			min-height: 286px;
 		}
 		img {
 			position: absolute;
@@ -1583,7 +1613,7 @@ body {
 }
 
 .articles {
-	padding: 20px 0;
+	padding: 22px 0 20px 0;
 	&__title {
 		margin: 10px 0;
 		span {
@@ -1617,7 +1647,7 @@ body {
 	&__inner {
 		flex-basis: 54.92%;
 		border: 1px solid #e9eaeb;
-		padding: 22px 29px 15px 29px;
+		padding: 24px 29px 15px 29px;
 		flex-grow: 1;
 	}
 	&__date {
@@ -1638,7 +1668,7 @@ body {
 	&__text {
 		font-size: 14px;
 		color: #777;
-		line-height: 1.42;
+		line-height: 1.44;
 	}
 }
 
@@ -1663,7 +1693,7 @@ body {
 }
 
 .popularProducts {
-	padding: 40px 0 40px 0;
+	padding: 39px 0 51px 0;
 	&__title {
 		margin: 10px 0 6px 0;
 	}
@@ -1697,7 +1727,7 @@ body {
 		display: block;
 		min-width: 108px;
 		max-width: 100%;
-		padding: 6px 15px 6px 15px;
+		padding: 6px 16px 8px 16px;
 		text-align: center;
 		position: relative;
 		&:hover {
@@ -1726,6 +1756,13 @@ body {
 			margin: 0 0 0 30px;
 		}
 	}
+	.catalogBox {
+		&__pic {
+			min-height: 234px;
+			display: flex;
+			align-items: center;
+		}
+	}
 	
 }
 
@@ -1734,8 +1771,10 @@ body {
 	&__header {
 		display: flex;
 		align-items: center;
-		padding: 0 0 3px 0;
 		
+	}
+	&__title {
+		margin-bottom: 7px;
 	}
 	&__moreLink {
 		font-size: 14px;
@@ -1762,6 +1801,14 @@ body {
 }
 
 .watchedProductsSlider {
+	.catalogBox {
+		&__currentPrice {
+			font-size: 20px;
+		}
+		&_price {
+			padding: 7px 0 0 1px;
+		}
+	}
 	.owl-stage {
 		display: flex;
 		.owl-item {
@@ -1803,7 +1850,7 @@ body {
 			margin: 2px 0 -6px 0;
 		}
 		&__actions {
-			padding: 9px 0 0 0;
+			padding: 14px 0 0 3px;
 		}
 		&__entry {
 			margin-top: auto;
@@ -1813,6 +1860,11 @@ body {
 			.rating {
 				margin: 5px 0 0 -5px;
 			}
+		}
+		&__btn {
+			padding: 0 10px;
+			flex-basis: 96px;
+			margin-right: 22px;
 		}
 	}
 	.owl-carousel .owl-item {
@@ -1869,7 +1921,7 @@ body {
 }
 
 .footerInner {
-	padding: 0 0 30px 0;
+	padding: 5px 0 30px 0;
 	display: flex;
 	&__col-1 {
 		flex-basis: 39.13%;
@@ -1937,6 +1989,7 @@ body {
 }
 
 .footerContacts {
+	padding: 4px 0 0 0;
 	&__phone {
 		font-family: 'ProximaNova-Bold', sans-serif;
 		font-size: 23px;
